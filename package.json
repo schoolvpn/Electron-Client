@@ -1,0 +1,48 @@
+{
+  "name": "SchoolVPNClient",
+  "version": "2.0.0",
+  "description": "SchoolVPN Client",
+  "main": "./www/main.js",
+  "scripts": {
+    "start": "npm install && electron ./www/main.js",
+    "postinstall": "install-app-deps",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": "https://github.com/incizzle/SchoolVPN-Client",
+  "keywords": [
+    "Electron",
+    "OpenVpn"
+  ],
+  "author": "iNcizzle",
+  "license": "",
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "electron-builder": "^20.4.1"
+  },
+  "build": {
+    "appId": "com.schoolvpnclient.app",
+    "win": {
+      "icon": "resources/icon.ico",
+      "extraResources": [
+        "resources"
+      ],
+      "requestedExecutionLevel": "requireAdministrator",
+      "signAndEditExecutable": true,
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true,
+      "runAfterFinish": true,
+      "createDesktopShortcut": true,
+      "allowElevation": true,
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}

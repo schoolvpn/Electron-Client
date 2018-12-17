@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>School VPN Client</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+  <header>
+    <button class="mdi mdi-close option" onclick="disconnect()"></button>
+    <button class="mdi mdi-window-maximize option" onclick="maximize()"></button>
+    <button class="mdi mdi-window-minimize option" onclick="minimize()"></button>
+  </header>
+  <body>
+    <div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
+      <span></span>
+      <div class="flex-col-c p-t-50 p-b-50">
+        <h3 id="maintitle" class="l1-txt1 txt-center p-b-10">SchoolVPN Client</h3>
+        <br>
+        <p class="txt-center l1-txt2 p-b-60">
+          Click the connect button below to connect! 
+              </p>
+              <p id="status" class="txt-center l1-txt2 p-b-60" >
+                  Disconnected
+              </p>
+            <button id="button" class="flex-c-m s1-txt2 size3 how-btn" onclick="connect()">Connect</button>
+      </div>
+      <span class="s1-txt3 txt-center">
+        @ 2018 Schoolvpn.ca.
+      </span>
+    </div>
+  <!--===============================================================================================-->	
+    <script src="renderer.js"></script>
+  </body>
+</html>
