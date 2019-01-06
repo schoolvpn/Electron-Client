@@ -18,27 +18,27 @@ const electron = require('electron');
 
     // Invocked when connect function is run
     function connect() {
-    // Change status text area to Loading
-    document.getElementById("status").innerHTML = "Loading";
-    // Change button text area to Connecting
-    document.getElementById("button").textContent = "Connecting";
-    const openvpn = spawn('C:\\Program\ Files\\OpenVPN\\bin\\openvpn.exe', ['--config', 'C:\\Program\ Files\\SchoolVPNClient\\resources\\resources\\client.ovpn']);
-    
-    openvpn.stdout.on('data', (data) => {
-        console.log(data.toString());
-    });
+        // Change status text area to Loading
+        document.getElementById("status").innerHTML = "Loading";
+        // Change button text area to Connecting
+        document.getElementById("button").textContent = "Connecting";
+        const openvpn = spawn('C:\\Program\ Files\\OpenVPN\\bin\\openvpn.exe', ['--config', 'C:\\Program\ Files\\SchoolVPNClient\\resources\\resources\\client.ovpn']);
+        
+        openvpn.stdout.on('data', (data) => {
+            console.log(data.toString());
+        });
 
-    openvpn.stderr.on('data', (data) => {
-        console.log(data.toString());
-    });
+        openvpn.stderr.on('data', (data) => {
+            console.log(data.toString());
+        });
 
-    openvpn.on('exit', (code) => {
-        console.log(`Child exited with code ${code}`);
-    });
-    
-    document.getElementById("status").innerHTML = "Connected";
-    document.getElementById("button").textContent = "Disconnect";
-    document.getElementById("button").setAttribute( "onClick", "javascript: disconnect();" );
+        openvpn.on('exit', (code) => {
+            console.log(`Child exited with code ${code}`);
+        });
+        
+        document.getElementById("status").innerHTML = "Connected";
+        document.getElementById("button").textContent = "Disconnect";
+        document.getElementById("button").setAttribute( "onClick", "javascript: disconnect();" );
     };
     // Invocked when disconnect function is run
     function disconnect() {
