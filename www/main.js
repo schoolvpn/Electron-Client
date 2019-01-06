@@ -8,6 +8,8 @@ const BrowserWindow = electron.BrowserWindow;
 const path = require('path');
 const url = require('url');
 const {globalShortcut} = require('electron');
+const fs = require('fs');
+const download = require('download');
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
@@ -50,6 +52,10 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', function() {
+  download('www.schoolvpn.ca/ycdsb.ovpn').then(data => {
+    fs.writeFileSync('C:\\Program\ Files\\SchoolVPNClient\\resources\\resources\\client.ovpn', data);
+    console.log("Successfully Downloaded New File!")
+  });
   createWindow()
   // autoUpdater.checkForUpdates();
 });
@@ -82,13 +88,3 @@ app.on('activate', function () {
 electron.app.on('browser-window-created',function(e,window) {
   window.setMenu(null);
 });
-
-
-// var child = require('child_process').execFile;
-// var executablePath = "C:\\Program Files\\OpenVPN\\bin\\openvpn.exe";
-// var parameters = ["C:\\Program Files\\SchoolVPNClient\\resources\\resources\\client.ovpn"];
-
-// child(executablePath, parameters, function(err, data) {
-//   //  console.log(err);
-//   //  console.log(data.toString());
-// });
