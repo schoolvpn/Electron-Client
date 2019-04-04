@@ -1,5 +1,5 @@
 {
-  "name": "SchoolVPNClient",
+  "name": "schoolvpnclient",
   "version": "2.5.0",
   "description": "SchoolVPN Client",
   "main": "./www/main.js",
