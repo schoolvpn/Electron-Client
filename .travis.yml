@@ -1,0 +1,4 @@
+os: windows
+language: node_js
+  before_install: npm install
+  install: npm run dist
