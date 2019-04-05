@@ -1,6 +1,6 @@
 {
-  "name": "SchoolVPNClient",
-  "version": "2.0.0",
+  "name": "schoolvpnclient",
+  "version": "2.5.0",
   "description": "SchoolVPN Client",
   "main": "./www/main.js",
   "scripts": {
@@ -17,13 +17,12 @@
   "author": "iNcizzle",
   "license": "",
   "devDependencies": {
-    "electron": "^4.1.3",
+    "electron": "^4.1.4",
     "electron-builder": "^20.4.1"
   },
   "build": {
     "appId": "com.schoolvpnclient.app",
     "win": {
-      "icon": "resources/icon.ico",
       "extraResources": [
         "resources"
       ],
