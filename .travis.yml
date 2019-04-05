@@ -1,5 +1,6 @@
 os: windows
 language: node_js
+cache: npm
 node_js: 
   - "10.15.3"
 before_install: 
@@ -11,5 +12,3 @@ deploy:
   provider: releases
   file: "dist/schoolvpnclient Setup 2.5.0.exe"
   skip_cleanup: true
-  on:
-    tags: true
