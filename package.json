@@ -1,6 +1,6 @@
 {
-  "name": "SchoolVPNClient",
-  "version": "2.0.0",
+  "name": "schoolvpnclient",
+  "version": "2.5.0",
   "description": "SchoolVPN Client",
   "main": "./www/main.js",
   "scripts": {
@@ -23,7 +23,6 @@
   "build": {
     "appId": "com.schoolvpnclient.app",
     "win": {
-      "icon": "resources/icon.ico",
       "extraResources": [
         "resources"
       ],
