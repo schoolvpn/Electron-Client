@@ -23,7 +23,6 @@
   "build": {
     "appId": "com.schoolvpnclient.app",
     "win": {
-      "icon": "resources/icon.ico",
       "extraResources": [
         "resources"
       ],
