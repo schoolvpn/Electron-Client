@@ -1,14 +1,16 @@
 os: windows
 language: node_js
 cache: npm
-node_js: 
-  - "10.15.3"
-before_install: 
-  - npm install
-  - npm i -g electron-builder@20.4.1
-install: 
-  - npm run dist
+node_js:
+- 10.15.3
+before_install:
+- npm install
+- npm i -g electron-builder@20.4.1
+install:
+- npm run dist
 deploy:
   provider: releases
-  file: "dist/schoolvpnclient Setup 2.5.0.exe"
+  file: dist/schoolvpnclient Setup 2.5.0.exe
   skip_cleanup: true
+  api-key:
+    secure: dhD+vkVOu2Nm9EcFoYMEvISVhn+/TW2ZNfaBPo3yk38A0sKJn9i82W815m5Hu+JSwcdNehFo7wd4SexAC2oE5kRFL8maya+4XtKLGSIAbET1S/TmBXP0dHZvY5cW/J2Z+nNMO01VeugLXvNgpfJURCOUvnyxMzpvDH9vQWUP3O0yGCaY7S/u7MeREoqqV5WYWaYBYeazHFAaCvvfzri9bCnS5EZNPM8z+okYvI3bt1kq75KHMcH/vG5VQFXjYAQwfV1Jn+idSgQFSvKoIwsmFu1VEcaFrGBb69s8pe253AgS9ntagKFOBovqHPEi3roCKFuFs2htDoNeg7kmV6E3FvCOsmXNMEMGBTDC3tJwfH4xn0FPC6h2bJQ5K3+BoKhcfwA+t09Ho7dehf6haJnjhV1PViJGn+Pn/9zSfU3zkhfOhbSo2Dq5VEG+yiKz5d7ZMANl2XIwC9BXFaLV0v2Pc5PAd1n8JN4cbQaR7zmorDz+bV169FjPJAzYx9ocu3YzvpVGXBIFvJTwbkLOFvHV7HBFmylw69AWDeVLHi3b5jyq6tHN5132CsQHLxQHadfhh7HmIAakWLiPRBbu+387gKsnpUYg8n8AqbyMwBOrbjGrNuZuH0R2U0G+wkV/9sC6tCdgmSvelhcGWLbZFGjN5I1LceCZZ9EuT/pZ7T86iGM=
