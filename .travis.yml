@@ -12,5 +12,4 @@ deploy:
   provider: releases
   file: dist/schoolvpnclient Setup 2.5.0.exe
   skip_cleanup: true
-  api-key:
-    secure: tKc+UpZoqBWIBOgYhuJ2plcfLQcmpbmerHj2w+VFBUtdla9RHXiOnG2NwqfAUPEJ+SdzssLp0MfjjE1BLhs6WzIinJYC+8Yj2wKgJXH1IH+MPVxU52RY/wOoq3wX8TY27+2U0c8kbFw01Ng+yFauLSS3kbVrSqmSTCxAEuCA3yq9a95oaV0gr/3//ZoLKD3MQTUILRSki0wI1Z/3p5n9axuoOwgfxJ7iSTq5rXv0IZXvTbyCyhC8/rI5ngRQ4gOp6O1m38z3wZ1er4sap/VyFDNW93+4yCrvS0zs/6uCDSWBbAsnz/MZPvtQp9wrcWAQg4ifOYcxHb3dfOa1SHBrGAG/HAcSxL3SZv6W73zaun58DEfpRc6zUkkW13XbLlzAP9qNEPebpBCkIwWUpS+wJID0i/W8KElV1/FrgBt5QTke/rTlUiRMcOlD97+/1Hc6lZeeB0uVquUFmXattN2EjK+y0APPqX3HDhd1H2YpzlUSfRpQtV88hPd1io9JUyiF6ZqC3k8juDo4Bk+2QeGJhn5M6uvQbhrTE/od9QmR2gv1+jDE5qNakpzTbE876FkMree3iPqpJeGgjmoqCZbV86ZQGySy+ZaksOVlObjC19kvYi4yLoKedYqb82ymb2UpQ4ibP0faRvUUT9AkZaVqWgzJY/pcO+9ckjAndwgm6vU=
+  api-key: $token
