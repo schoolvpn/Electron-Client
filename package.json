@@ -18,7 +18,7 @@
   "license": "",
   "devDependencies": {
     "electron": "^4.1.4",
-    "electron-builder": "^20.4.1"
+    "electron-builder": "^20.40.2"
   },
   "build": {
     "appId": "com.schoolvpnclient.app",
