@@ -17,7 +17,7 @@
   "author": "iNcizzle",
   "license": "",
   "devDependencies": {
-    "electron": "^4.1.4",
+    "electron": "^7.1.2",
     "electron-builder": "^20.4.1"
   },
   "build": {
