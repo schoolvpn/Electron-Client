@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "child_process": "^1.0.2",
-    "download": "^7.1.0",
+    "download": "^8.0.0",
     "fs": "0.0.1-security"
   }
 }
